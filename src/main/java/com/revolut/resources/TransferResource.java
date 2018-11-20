@@ -1,6 +1,5 @@
 package com.revolut.resources;
 
-import com.revolut.api.Message;
 import com.revolut.domain.Account;
 import com.revolut.domain.Transaction;
 import com.revolut.event.command.IntraBankTransferCommandEvent;
@@ -43,12 +42,6 @@ public class TransferResource extends BaseResource {
         this.accountService=accountService;
         this.transactionService=transactionService;
         this.commandExecutor=intraBankTransferExecutor;
-    }
-
-    @GET
-    @Produces(APPLICATION_JSON)
-    public Message hello() {
-        return new Message(MESSAGE);
     }
 
     @GET

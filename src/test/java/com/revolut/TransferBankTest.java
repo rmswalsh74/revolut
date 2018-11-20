@@ -1,6 +1,5 @@
 package com.revolut;
 
-import com.revolut.api.Message;
 import com.revolut.domain.Account;
 import com.revolut.domain.Bank;
 import com.revolut.domain.Transaction;
