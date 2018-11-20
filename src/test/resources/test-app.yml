@@ -1,0 +1,53 @@
+database:
+  # the name of your JDBC driver
+  driverClass: org.h2.Driver
+
+  # the username
+  user: sa
+
+  # the password
+  password: sa
+
+  # the JDBC URL
+  url: jdbc:h2:mem:revolut?user=sa
+
+  # any properties specific to your JDBC driver:
+  properties:
+    charSet: UTF-8
+    hibernate.dialect: org.hibernate.dialect.H2Dialect
+    hibernate.hbm2ddl.auto: create
+
+  # the maximum amount of time to wait on an empty pool before throwing an exception
+  maxWaitForConnection: 1s
+
+  # the SQL query to run when validating a connection's liveness
+  validationQuery: "/* MyApplication Health Check */ SELECT 1"
+
+  # the minimum number of connections to keep open
+  minSize: 8
+
+  # the maximum number of connections to keep open
+  maxSize: 32
+
+  # whether or not idle connections should be validated
+  checkConnectionWhileIdle: false
+
+server:
+  applicationConnectors:
+    - type: http
+      port: 0
+  adminConnectors:
+    - type: http
+      port: 0
+
+# Logging settings.
+logging:
+  level: DEBUG
+  appenders:
+    - type: console
+    - type: file
+      currentLogFilename: './logs/test-application.log'
+      archivedLogFilenamePattern: './logs/test-application-%d-%i.log.gz'
+      archive: true
+      archivedFileCount: 7
+      maxFileSize: '1mb'

@@ -1,0 +1,50 @@
+INFO  [2018-11-18 18:46:24,457] org.eclipse.jetty.server.AbstractConnector: Stopped application@3e839aa3{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+INFO  [2018-11-18 18:46:24,458] org.eclipse.jetty.server.AbstractConnector: Stopped admin@751bb780{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+INFO  [2018-11-18 18:46:24,460] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@517d9cd5{/,null,UNAVAILABLE}
+INFO  [2018-11-18 18:46:24,462] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@4b4228cf{/,null,UNAVAILABLE}
+INFO  [2018-11-18 18:49:24,984] org.eclipse.jetty.util.log: Logging initialized @1235ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2018-11-18 18:49:25,047] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2018-11-18 18:49:25,049] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2018-11-18 18:49:25,154] org.hibernate.Version: HHH000412: Hibernate Core {5.2.8.Final}
+INFO  [2018-11-18 18:49:25,155] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2018-11-18 18:49:25,162] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.revolut.domain.Account, com.revolut.domain.Bank, com.revolut.domain.Transaction, com.revolut.domain.User]
+INFO  [2018-11-18 18:49:25,182] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  [2018-11-18 18:49:25,384] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+INFO  [2018-11-18 18:49:25,625] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@4e5364a3
+INFO  [2018-11-18 18:49:25,626] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.Duration] overrides previous : org.hibernate.type.DurationType@1a336906
+INFO  [2018-11-18 18:49:25,626] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.Instant] overrides previous : org.hibernate.type.InstantType@62054faf
+INFO  [2018-11-18 18:49:25,627] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalDate] overrides previous : org.hibernate.type.LocalDateType@75d539b9
+INFO  [2018-11-18 18:49:25,628] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalDateTime] overrides previous : org.hibernate.type.LocalDateTimeType@20f63ddc
+INFO  [2018-11-18 18:49:25,629] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalTime] overrides previous : org.hibernate.type.LocalTimeType@210c1b9d
+INFO  [2018-11-18 18:49:25,629] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.OffsetDateTime] overrides previous : org.hibernate.type.OffsetDateTimeType@69bc4024
+INFO  [2018-11-18 18:49:25,629] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.OffsetTime] overrides previous : org.hibernate.type.OffsetTimeType@3578a45b
+INFO  [2018-11-18 18:49:25,630] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.ZonedDateTime] overrides previous : org.hibernate.type.ZonedDateTimeType@24f177f5
+INFO  [2018-11-18 18:49:25,672] org.hibernate.tuple.PojoInstantiator: HHH000182: No default (no-argument) constructor for class: com.revolut.domain.User (class must be instantiated by Interceptor)
+INFO  [2018-11-18 18:49:25,702] org.hibernate.tuple.PojoInstantiator: HHH000182: No default (no-argument) constructor for class: com.revolut.domain.Bank (class must be instantiated by Interceptor)
+INFO  [2018-11-18 18:49:25,704] org.hibernate.tuple.PojoInstantiator: HHH000182: No default (no-argument) constructor for class: com.revolut.domain.Account (class must be instantiated by Interceptor)
+INFO  [2018-11-18 18:49:25,773] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2018-11-18 18:49:25,848] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2018-11-18 18:49:25,849] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2018-11-18 18:49:25,850] io.dropwizard.server.ServerFactory: Starting TransferApplication
+INFO  [2018-11-18 18:49:25,935] org.eclipse.jetty.setuid.SetUIDListener: Opened application@2cacd55e{HTTP/1.1,[http/1.1]}{0.0.0.0:56433}
+INFO  [2018-11-18 18:49:25,936] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@2ba9f743{HTTP/1.1,[http/1.1]}{0.0.0.0:56434}
+INFO  [2018-11-18 18:49:25,937] org.eclipse.jetty.server.Server: jetty-9.4.6.v20170531
+INFO  [2018-11-18 18:49:26,341] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /hello (com.revolut.resources.TransferResource)
+    POST    /hello (com.revolut.resources.TransferResource)
+
+INFO  [2018-11-18 18:49:26,343] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@7dbd70fd{/,null,AVAILABLE}
+INFO  [2018-11-18 18:49:26,345] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2018-11-18 18:49:26,349] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@7e84a52b{/,null,AVAILABLE}
+INFO  [2018-11-18 18:49:26,360] org.eclipse.jetty.server.AbstractConnector: Started application@2cacd55e{HTTP/1.1,[http/1.1]}{0.0.0.0:56433}
+INFO  [2018-11-18 18:49:26,363] org.eclipse.jetty.server.AbstractConnector: Started admin@2ba9f743{HTTP/1.1,[http/1.1]}{0.0.0.0:56434}
+INFO  [2018-11-18 18:49:26,363] org.eclipse.jetty.server.Server: Started @2616ms
+INFO  [2018-11-18 18:49:26,904] org.eclipse.jetty.server.AbstractConnector: Stopped application@2cacd55e{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+INFO  [2018-11-18 18:49:26,904] org.eclipse.jetty.server.AbstractConnector: Stopped admin@2ba9f743{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+INFO  [2018-11-18 18:49:26,905] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@7e84a52b{/,null,UNAVAILABLE}
+INFO  [2018-11-18 18:49:26,907] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@7dbd70fd{/,null,UNAVAILABLE}
