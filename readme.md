@@ -1,6 +1,6 @@
 Here is the Transfer application.
 
-It simply transfers money from one account to another.
+It simply transfers money from one account to another. It works for an Intra Bank Transfer only.
 
 There are curl scripts available to test the functionality in the /curl top level directory
 
